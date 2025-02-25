@@ -11,7 +11,7 @@ def get_mask_card_number(card_info):
 
 def get_mask_account(account_info):
     """
-    Принимает на вход строку с типом и номером счета и возвращает маску номера по правилу **XXXX
+    Принимaет на вход строку с типом и номером счета и возвращает маску номера по правилу **XXXX
     """
     parts = account_info.split()
     account_number = parts[-1]
