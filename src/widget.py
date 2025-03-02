@@ -9,6 +9,7 @@ def get_mask_card_number(card_info):
     masked_number = f"{card_number[:4]} {card_number[4:6]}** **** {card_number[-4:]}"
     return ' '.join(parts[:-1]) + ' ' + masked_number
 
+
 def get_mask_account(account_info):
     """
     Принимaет на вход строку с типом и номером счета и возвращает маску номера по правилу **XXXX
@@ -20,6 +21,7 @@ def get_mask_account(account_info):
     masked_number = f"**{account_number[-4:]}"
     return ' '.join(parts[:-1]) + ' ' + masked_number
 
+
 def mask_account_card(card_info):
     """
     Принимает на вход строку формата "Visa Platinum 7000792289606361", "Maestro 7000792289606361" и "Счет 73654108430135874305"
@@ -28,6 +30,7 @@ def mask_account_card(card_info):
         return get_mask_account(card_info)
     else:
         return get_mask_card_number(card_info)
+
 
 def get_date(date_str):
     """
@@ -40,11 +43,12 @@ def get_date(date_str):
     except ValueError:
         raise ValueError("Неверный формат даты")
 
-if __name__ == "__main__":
-     card_info = input("enter card number:")
-     account_info = input("enter account number:")
-     date_str = input("enter date:")
 
-     print(mask_account_card(card_info))
-     print(mask_account_card(account_info))
-     print(get_date(date_str))
+if __name__ == "__main__":
+    card_info = input("enter card number:")
+    account_info = input("enter account number:")
+    date_str = input("enter date:")
+
+    print(mask_account_card(card_info))
+    print(mask_account_card(account_info))
+    print(get_date(date_str))

@@ -9,6 +9,7 @@ def get_mask_card_number(card_info):
     masked_number = f"{card_number[:4]} {card_number[4:6]}** **** {card_number[-4:]}"
     return ' '.join(parts[:-1]) + ' ' + masked_number
 
+
 def get_mask_account(account_info):
     """
     Принимает на вход строку с типом и номером счета и возвращает маску номера по правилу **XXXX

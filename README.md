@@ -9,3 +9,7 @@ https://github.com/maloyyyt/PP10-1
 ## Создайте виртуальное окружение для изоляции зависимостей проекта:
 Можно сделать с помощью venv или virtualenv. Используя venv (встроенный модуль Python): python -m venv venv
 
+## Установите необходимые зависимости:
+```
+pip install -r requirements.txt
+```
