@@ -6,26 +6,7 @@
 ```
 https://github.com/maloyyyt/PP10-1
 ```
-## Создайте виртуальное окружение для изоляции зависимостей проекта:
-1. Убедитесь, что у вас установлен Python 3.6 или выше.
-2. Перейдите в директорию проекта.
-3. Создайте виртуальное окружение:
-```
-python -m venv venv
-```
-4. Активируйте виртуальное окружение:
-*   Для Linux/macOS:
-```
-source venv/bin/activate
-```
-*   Для Windows:
-```  
-venv\Scripts\activate
-```
-5. Установите необходимые зависимости:
-```
-pip install -r requirements.txt
-```
+
 ## Использование
 
 Модуль `processing` содержит функции `filter_by_state` и `sort_by_date`.
